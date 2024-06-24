@@ -10,9 +10,10 @@ export const StateContextProvider = ({ children }) => {
     const [thisLocation, setLocation] = useState('')
 
     const fetchWeather = async () => {
+        
         const options = {
             method: 'GET',
-            url: 'https://weather-api99.p.rapidapi.com/weather',
+            url: 'https://weather-api99.p.rapidapi.com/weather?',
             params: {
                 aggregateHours: '24',
                 location: place,
